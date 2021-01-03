@@ -1,0 +1,23 @@
+---
+layout: archive
+author_profile: true
+title: Mehul Prajapati
+excerpt: Personal blog covering Embedded Linux, TCP/IP Networking, IoT, Python tweaks and other musings.
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: embedded.jpg
+---
+{% include base_path %}
+
+<h2>Welcome to my blog</h2>
+
+I ramble with things that amuse me. Mostly, I play with the development boards to build some cool mini projects. So, This blog will cover topics related to Embedded systems.
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
